@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e300466-68dc-4d2b-816d-7b092d6ee82b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,12 +24,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2AfKRzgoNWLAj8CZ8ZEaqja24zW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -56,7 +61,9 @@
       <workItem from="1655823430159" duration="46000" />
       <workItem from="1656347063677" duration="720000" />
       <workItem from="1656428933410" duration="303000" />
-      <workItem from="1656691219960" duration="995000" />
+      <workItem from="1656691219960" duration="1386000" />
+      <workItem from="1656693367166" duration="56000" />
+      <workItem from="1657030832583" duration="561000" />
     </task>
     <servers />
   </component>
@@ -73,5 +80,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
