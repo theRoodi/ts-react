@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e300466-68dc-4d2b-816d-7b092d6ee82b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/OnOff/OnOff.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Rating/Rating.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Accordion/UncontrolledAccordion.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Rating/UncontrolledRating.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Rating/UncontrolledRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating/UncontrolledRating.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/programming/ts-react/src/components/Accordion",
+    "last_opened_file_path": "D:/programming/ts-react/src/components/Rating",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -50,6 +50,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\programming\ts-react\src\components\Rating" />
       <recent name="D:\programming\ts-react\src\components\Accordion" />
       <recent name="D:\programming\ts-react\src\components\OnOff" />
     </key>
@@ -75,7 +76,9 @@
       <workItem from="1656693367166" duration="56000" />
       <workItem from="1657030832583" duration="692000" />
       <workItem from="1658587272225" duration="117000" />
-      <workItem from="1658763638343" duration="2555000" />
+      <workItem from="1658763638343" duration="2954000" />
+      <workItem from="1658934572319" duration="558000" />
+      <workItem from="1659197003541" duration="2157000" />
     </task>
     <servers />
   </component>

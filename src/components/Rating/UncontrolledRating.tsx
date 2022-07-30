@@ -1,7 +1,15 @@
 import React, {useState} from 'react'
 
-const UncontrolledRating = () => {
-    let [value, setValue] = useState(0)
+
+export type RatingValueType = 0 | 1 | 2 | 3 | 4 | 5
+type RatingPropsType = {
+    defaultValue? : RatingValueType
+    onChange: (value: RatingValueType) => void
+}
+
+
+const UncontrolledRating = (props:RatingPropsType) => {
+    let [value, setValue] = useState<RatingValueType>(props.defaultValue ? props.defaultValue : 0)
 
     return (
         <div>
@@ -18,7 +26,7 @@ const UncontrolledRating = () => {
 type StarPropsType = {
     selected: boolean
     value : 1 | 2 | 3 | 4 | 5
-    setValue: (value : 1 | 2 | 3 | 4 | 5) => void
+    setValue: (value : RatingValueType) => void
 }
 
 
