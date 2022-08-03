@@ -32,7 +32,7 @@ type StarPropsType = {
 
 const Star = (props: StarPropsType) => {
     return <span onClick={() => props.setValue(props.value)}
-    >{props.selected ? <b>star</b> : 'star'}</span>
+    >{props.selected ? <b> star</b> : ' star'}</span>
 }
 
 export default UncontrolledRating
