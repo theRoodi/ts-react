@@ -10,30 +10,31 @@ function App() {
     const [switched, setSwitched] = useState<boolean>(false)
 
 
-  const menu = {
-    first: 'soup',
-    second: 'not soup',
-    drink: 'juice',
-    dessert: 'cake'
-  }
-  return (
-    <div>
-      <AppTitle title={'some title'} />
-      <Rating value={ratingValue} onClick={setRatingValue}/>
-      <Accordion title={'Menu'} menu={menu} collapsed = {setCollapsed} value={collapsed}/>
-        <OnOff on={switched} onClick={setSwitched}/>
-    </div>
-  );
+    const menu = [{title: 'soup', value: 1}, {title: 'beef', value: 2}, {title: 'bread', value: 3}, {
+        title: 'pasta',
+        value: 4
+    }]
+    const onClick = (value: any) => {
+        return value
+    }
+    return (
+        <div>
+            <AppTitle title={'some title'}/>
+            <Rating value={ratingValue} onClick={setRatingValue}/>
+            <Accordion title={'Menu'} onClick={onClick} menu={menu} collapsed={setCollapsed} value={collapsed}/>
+            <OnOff on={switched} onClick={setSwitched}/>
+        </div>
+    );
 }
 
 type PageTitlePropsType = {
-  title: string
+    title: string
 }
 
 const AppTitle = (props: PageTitlePropsType) => {
-  return (
-    <h1>{props.title}</h1>
-  )
+    return (
+        <h1>{props.title}</h1>
+    )
 }
 
 export default App
