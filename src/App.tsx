@@ -17,11 +17,14 @@ function App() {
     const onClick = (value: any) => {
         return value
     }
+    const onChange = () => {
+
+    }
     return (
         <div>
             <AppTitle title={'some title'}/>
             <Rating value={ratingValue} onClick={setRatingValue}/>
-            <Accordion title={'Menu'} onClick={onClick} menu={menu} collapsed={setCollapsed} value={collapsed}/>
+            <Accordion onChange={onChange} title={'Menu'} onClick={onClick} menu={menu} collapsed={setCollapsed} value={collapsed}/>
             <OnOff on={switched} onClick={setSwitched}/>
         </div>
     );
