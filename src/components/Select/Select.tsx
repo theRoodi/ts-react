@@ -1,5 +1,5 @@
 import style from './Select.module.css'
-import {useState} from 'react';
+import {useState, KeyboardEvent, useEffect} from 'react';
 
 
 type ItemType = {
@@ -25,9 +25,39 @@ export const Select = (props: SelectPropsType) => {
         toggleItem()
     }
 
+    useEffect(() => {
+        setHoveredElement(props.value)
+    }, [props.value])
+
+
+    const onKeyUp = (e: KeyboardEvent<HTMLDivElement>) => {
+        if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+            for (let i = 0; i < props.items.length; i++) {
+                if (props.items[i].value === hoveredElement) {
+                    const pretendentElement = e.key === 'ArrowDown'
+                        ? props.items[i + 1]
+                        : props.items[i - 1]
+                    if (pretendentElement) {
+                        props.onChange(pretendentElement.value)
+                        return
+                    }
+                }
+                if (!selectedItem) {
+                    props.onChange(props.items[0].value)
+                }
+            }
+        }
+
+        if (e.key === "Enter" || e.key === "Escape" ) {
+            setActive(false)
+        }
+    }
+
     return (
-        <div className={style.select}>
-            <span className={style.main} onClick={toggleItem}>{selectedItem && selectedItem.title}</span>
+        <div className={style.select} onKeyUp={onKeyUp} tabIndex={0}>
+            <span className={style.main} onClick={toggleItem}>
+                {selectedItem && selectedItem.title}
+            </span>
             {active &&
                 <div className={style.items}>
                     {props.items.map(item =>

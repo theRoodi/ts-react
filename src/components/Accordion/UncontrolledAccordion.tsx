@@ -1,20 +1,36 @@
-import {useState} from 'react';
+import {useReducer, useState} from 'react';
 
 type UnAccordionPropsType = {
     title: string,
     menu: object
 }
 
-export const UncontrolledAccordion = (props: UnAccordionPropsType) => {
-    let [collapsed, setCollapsed] = useState(false)
+export type ActionType = {
+    type: string
+}
 
-    const onClose = () => {
-        collapsed ? setCollapsed(false) : setCollapsed(true)
+export type StateType = {
+    collapsed: boolean
+}
+
+export const reducer = (state: StateType, action: ActionType) : StateType => {
+    switch (action.type){
+        case 'TOGGLE-COLLAPSED':
+            const stateCopy = {...state}
+            stateCopy.collapsed = !state.collapsed
+            return stateCopy
+        default:
+            throw new Error("Error type asshole")
     }
+}
+
+export const UncontrolledAccordion = (props: UnAccordionPropsType) => {
+    // let [collapsed, setCollapsed] = useState(false)
+    let [collapsed, dispatch] = useReducer(reducer, {collapsed: false})
 
     return (
         <div>
-            <AccordionTitle title={props.title} onClick={onClose}/>
+            <AccordionTitle title={props.title} onClick={() => {dispatch({type:'TOGGLE-COLLAPSED'})}}/>
             {!collapsed && <AccordionBody menu={props.menu}/>}
         </div>
     )

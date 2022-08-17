@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e300466-68dc-4d2b-816d-7b092d6ee82b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Select/Select.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Accordion/reducer.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Select/Select.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion/UncontrolledAccordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/UncontrolledAccordion.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Select/Select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +44,7 @@
     "last_opened_file_path": "D:/programming/ts-react/src/components/Select",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs.jest.jest_package": "D:/programming/ts-react/node_modules/react-scripts",
     "nodejs_package_manager_path": "npm",
     "ts.external.directory.path": "D:\\programming\\ts-react\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -57,7 +58,30 @@
       <recent name="D:\programming\ts-react\src\components\OnOff" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Jest.reducer.test.tsx">
+    <configuration name="change value" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/Accordion/reducer.test.tsx" />
+      <test-names>
+        <test-name value="change value" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="reducer.test.tsx" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/components/Accordion/reducer.test.tsx" />
+      <method v="2" />
+    </configuration>
     <configuration name="storybook" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -70,6 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.reducer.test.tsx" />
+        <item itemvalue="Jest.change value" />
         <item itemvalue="npm.storybook" />
       </list>
     </recent_temporary>
@@ -103,7 +129,8 @@
       <workItem from="1659534963403" duration="7000" />
       <workItem from="1660493167537" duration="2903000" />
       <workItem from="1660570358462" duration="595000" />
-      <workItem from="1660663121411" duration="4112000" />
+      <workItem from="1660663121411" duration="4776000" />
+      <workItem from="1660746036154" duration="5991000" />
     </task>
     <servers />
   </component>
