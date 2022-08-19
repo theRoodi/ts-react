@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e300466-68dc-4d2b-816d-7b092d6ee82b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/stories/ReactMemo.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/UseEffect.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/UseState.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/ReactMemo.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/ReactMemo.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -128,7 +130,8 @@
       <workItem from="1660570358462" duration="595000" />
       <workItem from="1660663121411" duration="4776000" />
       <workItem from="1660746036154" duration="6265000" />
-      <workItem from="1660835350004" duration="4756000" />
+      <workItem from="1660835350004" duration="5068000" />
+      <workItem from="1660919758174" duration="5916000" />
     </task>
     <servers />
   </component>
